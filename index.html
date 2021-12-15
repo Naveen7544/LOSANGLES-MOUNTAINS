@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&family=Oswald:wght@700&family=Poppins:wght@700;700&family=Ubuntu:wght@500&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Lato", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+
+      header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .active {
+        position: absolute;
+        top: 0;
+        left: 700px;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .active2 {
+        position: relative;
+        top: -80px;
+        left: 700px;
+        width: 100%;
+        padding: 30px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .active2 ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .active2 ul li {
+        list-style: none;
+        margin-left: 10px;
+      }
+
+      header ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      header ul li {
+        list-style: none;
+        margin-left: 10px;
+      }
+
+      section img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+      }
+
+      section {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      section img#stars {
+        mix-blend-mode: screen;
+      }
+
+      section img#mountains_hero {
+        z-index: -5;
+      }
+
+      section span {
+        color: #192a56;
+        font-size: 4.5vw;
+      }
+
+      #lmtext {
+        position: absolute;
+        display: flex;
+        width: 90%;
+        margin-top: -524px;
+        margin-left: 65px;
+        
+      }
+
+      .logo {
+        margin-right: auto;
+        padding: auto;
+      }
+
+      .logo1 {
+        margin-right: auto;
+        padding: auto;
+        margin-left: 80px;
+        margin-top: 20px;
+      }
+
+      #text2 span {
+        color: #192a56;
+        font-size: 2vw;
+      }
+
+      #text2 {
+        margin-top: -50px;
+        margin-left: 130px;
+        color: #2f3640;
+        white-space: normal;
+        font-size: 2vw;
+      }
+
+      #img {
+        position: relative;
+        top: -60px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+      }
+
+      .desc h1 {
+        position: absolute;
+        margin-top: -900px;
+        margin-left: 130px;
+        color: #2f3640;
+        font-size: 10vw;
+      }
+
+      #Hist {
+        position: absolute;
+        margin-top: -835px;
+        margin-left: 261px;
+        color: #192a56;
+        font-size: 2vw;
+        font-weight: 800;
+      }
+
+      #pargraph {
+        position: absolute;
+        margin-top: -790px;
+        margin-left: 200px;
+        font-size: 12px;
+      }
+
+      .peaks {
+        position: relative;
+        display: flex;
+        width: 100%; 
+        margin-top: -350px;
+        margin-left: 160px;
+      }
+      .box {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        height: 180px;
+        margin-top: -370px;
+        background-color: rgb(20, 26, 59);
+        opacity: 0.8;
+      }
+
+      #img1 {
+        width: 18%;
+        margin-left: 5px;
+      }
+
+      #snow {
+        position: absolute;
+        display: flex;
+        top: 30px;
+        left: 0;
+        width: 100%;
+        
+        object-fit: cover;
+        pointer-events: none;
+      }
+
+      .desc1 h1 {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 160px;
+        color: #2f3640;
+        font-size: 8vw;
+      }
+
+
+      .container1 {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        height: 140px;
+        margin-top: 20px;
+        background-color: #fff;
+      }
+      #Hist1 {
+        position: absolute;
+        margin-top: 68px;
+        margin-left: 231px;
+        color: #192a56;
+        font-size: 2vw;
+        font-weight: 800;
+      }
+      .container1 h1 {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 130px;
+        color: #2f3640;
+        font-size: 8vw;
+      }
+      #pargraph1 {
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 320px;
+        font-size: 12px;
+     }
+
+     .container2 {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        height: 740px;
+        margin-top: 150px;
+        background-color: rgb(20, 26, 59);
+        
+      }
+      .container2 ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+      }
+
+      .container2 li {
+        list-style: none;
+        margin-left: 20px;
+        margin-top: -710px;
+      }
+
+      .container2 ul li a {
+        background-color: rgb(240, 239, 236);
+        color: rgb(20, 26, 59);
+        font-weight: 700;
+      }
+      .container3 {
+       box-sizing: border-box;
+        width: 250px;
+        position: absolute;
+        display: flex;
+        height: 130px;
+        margin-left: 240px;
+        margin-top: 480px;
+        background-color: #fff;
+        opacity: 0.8;
+      }
+
+      .container3 h1 {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 10px;
+        color: #192a56;
+        font-size: 2vw;
+        font-weight: 600;
+      }
+     
+
+      .container3 ul {
+        margin-top: 35px;
+      }
+
+      .container3 ul li {
+        list-style: none;
+        margin-left: 15px;
+        margin-top: 8px;
+        font-size: 10px;
+
+      }
+ 
+      .container3 ul li span {
+        margin-left: 60px;
+      }
+
+      .container4 {
+        width: 100%;
+        position: absolute;
+        display: flex;
+        height: 10px;
+        margin-top: 20px;
+        background-color: #fff;
+      }
+      .logo4 {
+        position: absolute;
+        margin-right: auto;
+        padding: auto;
+        margin-left: 150px;
+        margin-top: 805px;
+        opacity: 0.5;
+      }
+
+      #text4 span {
+        color: #192a56;
+        font-size: 2vw;
+      }
+
+      #text4 {
+        margin-top: 800px;
+        margin-left: 200px;
+        color: #2f3640;
+        white-space: normal;
+        font-size: 2vw;
+      }
+      footer {
+        display: flex;
+        position: relative;
+        margin-top: 840px;
+        margin-left: 650px;
+        font-size: 12px;
+        color: #fff;
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" class="logo" />
+
+      <div class="active">
+        <ul>
+          <li><a href="#">0.1 HISTORY</a></li>
+          <li><a href="#">0.2 TEAM</a></li>
+        </ul>
+      </div>
+    </header>
+    <section>
+      <img src="star.png" id="stars" />
+      <img src="Heroo.png" id="mountains_hero" />
+      
+      
+    </section>
+
+    <img src="LMtext.png" id="lmtext" />
+
+    <div class="container">
+      <img src="logo1.png" class="logo1" />
+      <h2 id="text2">LOSANGELES <br /><span>MOUNTAINS</span></h2>
+
+      <div class="active2">
+        <ul>
+          <li><a href="#">0.1 HISTORY</a></li>
+          <li><a href="#">0.2 TEAM</a></li>
+        </ul>
+      </div>
+      <img src="peak.png" id="img" />
+      <div class="desc">
+        <h1>01.</h1>
+        <h id="Hist">HISTORY</h>
+        <p id="pargraph">
+          Lorem ipsum dolar sit amet, consecte tur adipiscing elit. Proir in
+          ante viverre, rutrum crat rutrum, consectetur mi Proin<br />
+          at maximus est Mullar purus ex, iaculis sed erat ed blard it tincidunt
+          quam, Cras sce erisque id quam sed dignissir<br />
+          Pellerbeque upna nunc, gravida quis hendrerit ac, tristique ut quam,
+          Vivsmus suscipit dignissim tarter nec congue
+        </p>
+      </div>
+      <div class="box"></div>
+        <div class="peaks">
+          <img src="peak1.png" id="img1" />
+          <img src="peak3.png" id="img1" />
+          <img src="peak1.png" id="img1" />
+          <img src="peak4.png" id="img1" />
+        </div>
+      </div>
+    </div>
+   
+    <div class="container1">
+      <div class="desc1">
+        <h1>02.</h1>
+        <h id="Hist1">CLIMB</h>
+        <p id="pargraph1">Cres scelerisque id quam sed dignissim Pellentesque urna nunc, pravida quis hendrerit ac.<br>
+          CLIMB tristiqueurquam Vivamus suscipit di grissin to tor nec conque.
+          </p>
+          </div>
+    </div>
+    <div class="container2">
+      <ul>
+        <li><a href="#">MOUNTAIN 1</a></li>
+        <li><a href="#">MOUNTAIN 2</a></li>
+        <img src="snow.png" id="snow" />
+      </ul>
+    </div>
+    <div class="container3">
+      <h1>SCHEDULE</h1>
+      <ul>
+        <li><a id="a">25 Nov 2021 <span>Vestibulum viverra</span></a></li>
+        <li><a id="b">28 Nov 2021 <span>Vestibulum viverra</span></a></li>
+        <li><a id="c">18 Dec 2021 <span>Vestibulum viverra</span></a></li>
+        <li><a id="d">10 Jan 2022 <span>Vestibulum viverra</span></a></li>
+      </ul>
+      
+    </div>
+    <div class="container4">
+    <img src="logo2.png" class="logo4" />
+    <h2 id="text4">LOSANGELES <br /><span>MOUNTAINS</span></h2>
+    </div>
+    <footer>COPYRIGHT 2018. ALL RIGHTS RESERVED</footer>
+  </body>
+</html>
